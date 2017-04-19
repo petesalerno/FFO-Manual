@@ -707,7 +707,7 @@ if ($form_data['field'][233] == "Yes"){
    $FH6 .= $form_data['field'][234];
    $FH6 .="<hr><h5>Best Practice Information</h5><h6 class='bpi'>FIELD EQUIPMENT INSPECTION PROCEDURES<br><ul>";
    $FH6 .="<li>Harvesting containers should be stored in a manner so they do not become a source of contamination to the extent possible and appropriate. </li>";
-   $FH6 .="<liHarvesting totes should be cleaned and disinfected before each harvest season and whenever needed. There should not be any dirt or other debris allowed to accumulate in any container.</li>";
+   $FH6 .="<li>Harvesting totes should be cleaned and disinfected before each harvest season and whenever needed. There should not be any dirt or other debris allowed to accumulate in any container.</li>";
    $FH6 .="<li>Food-contact totes, bins, packing materials, other harvest containers, and pallets (as applicable) should be visually inspected, clean, intact functioning properly and free of any foreign materials prior to use.</li>";
    $FH6 .="<li>Containers should be sufficiently maintained so they do not become a source of contamination.</li>";
    $FH6 .="<li>If washed, wooden pallets and other wooden surfaces should be properly dried before use..</li>";
@@ -1143,7 +1143,7 @@ if ($form_data['field'][359] == "Yes"){
 /* 10.6.2 */
 if ($form_data['field'][359] == "Yes"){
    if ($form_data['field'][377]){
-	  $PHA11 = "A description of the water source(s) and distribution system used at is attached to the appendix.  <br<br>";
+	  $PHA11 = "A description of the water source(s) and distribution system used at is attached to the appendix.  <br><br>";
 	  if ($form_data['field'][378]){
 		 $PHA11 = "A procedure is attached to the appendix addressing the condition and maintenance activities for the water-delivery system used during packinghouse activities at $organization.<br><br>Maintenance activity records are also attached to the appendix.<br><br>";
 	  }

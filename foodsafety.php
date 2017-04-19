@@ -405,7 +405,7 @@ It is important to ensure that there are no cross-connections between agricultur
 </ul>
 <?php   if ($form_data['field'][133] != "") {  
     $waterSource2 = $form_data['field'][133]; 
-    foreach ($wtarerSource2 as $waterItem2) {
+    foreach ($waterSource2 as $waterItem2) {
      if ($item2 =="Municipal/City") {
 	 echo " <hr>	  
 <h5>Best Practice Information</h5>
@@ -510,14 +510,8 @@ Areas to consider during your risk assessment include (but are not limited to):<
    $watersource3 = $form_data['field'][133];
    foreach ($watersource3 as $wateritem3) {
      if ($wateritem3 =="Municipal/City") {
-	 echo " <hr>	  
-<h5>Best Practice Information</h5>
-<h6 class='bpi'>MUNICIPAL WATER TESTING<br>
-<ul>
-<li>If your water comes from a public source, such as the local water authority, their testing records may be used as documentation in lieu of self-testing.</li>
-<li>Test results should be obtained annually, and records kept in the appendix section of your food safety plan.</li>
-</ul>
-</h6><hr> ";
+	 echo " <hr>  <h5>Best Practice Information</h5><h6 class='bpi'>MUNICIPAL WATER TESTING<br><ul><li>If your water comes from a public source, such as the local water authority, their testing records may be used as documentation in lieu of self-testing.</li>";
+	 echo "<li>Test results should be obtained annually, and records kept in the appendix section of your food safety plan.</li></ul></h6><hr> ";
 	 };
 	 if ($wateritem3 =="Well") {
      echo " <hr>	  
@@ -553,7 +547,7 @@ Areas to consider during your risk assessment include (but are not limited to):<
 Acceptance criteria</em>
 <ul>
 <li>E. coli 0157-H7, Enterohemoragic E. coli (EHEC) and Salmonella spp results must be negative (0 per 100 mL of water).</li>
-<li>Generic E. coli results must lie between ²126MPN (or CFU)/100mL and ²235MPN/100mL for any single sample where edible portions of the crop ARE contacted by water.</li>
+<li>Generic E. coli results must lie between 126MPN (or CFU)/100mL and 235MPN/100mL for any single sample where edible portions of the crop ARE contacted by water.</li>
 <li>If testing has been performed for fecal coliforms then the limit is less than 2.2 fecal coliforms/100 mL of water. The Environmental Protection Agency (EPA) established this standard for reclaimed water (treated effluent) used on nonprocessed fresh produce. This 2.2 fecal coliforms/100 mL limit is considered free of pathogens for nonpotable agricultural purposes by the EPA. If higher densities of fecal coliforms are detected, it is suggested that growers do not use overhead irrigation.</li>
 <li>It is recommended that you check your local/state guidelines before interpreting any results. The laboratory who undertook the test, local EPA office and your local Agricultural Extension agent may also be able to help.</li>
 <li>Please note: the above limits outlined are for use for agricultural irrigation water. If you are also using your well water source for drinking then the limits should meet EPA drinking water standards. Please consult  http://water.epa.gov/drink/contaminants/index.cfm (EPA web site) for further information on the requirements for safe drinking water. <em>Note:  Water containing E. coli is not safe to drink.</em></li>
@@ -583,10 +577,10 @@ Acceptance criteria</em>
 </ul>	 
 </h6><hr> ";
 	 };
-	 if ($wateritem3 =="Spring and/or Rainwater Fed Pond/Reservoir/Dugout" || $wateritem3 =="Well Fed Pond/Reservoir/Dugout" || $source =="Other surface water sources (lake, pond/dugout fed by stream, ditch or run-off, river, stream, creek, canals, reservoirs, cisterns, sloughs,flooding)" ) {
-	 echo " <hr>	  
+   if ($wateritem3 =="Spring and/or Rainwater Fed Pond/Reservoir/Dugout" || $wateritem3 =="Well Fed Pond/Reservoir/Dugout" || $wateritem3 =="Other surface water sources (lake, pond/dugout fed by stream, ditch or run-off, river, stream, creek, canals, reservoirs, cisterns, sloughs,flooding)" ) {
+   echo " <hr>    
 <h5>Best Practice Information</h5>
-<h6 class='bpiSURFACE WATER TESTING<br>
+<h6 class='bpi'>SURFACE WATER TESTING - $wateritem3<br>
 <em>Frequency and When to Test Surface Water</em>
 <ul>
 <li>The frequency of testing required and the location of water sampling needs to be determined based on the water source, its particular history and your risk assessment. </li>
@@ -616,7 +610,7 @@ Acceptance criteria</em>
 <em>Interpreting the Test Results<br>Acceptance Criteria</em>
 <ul>
 <li>E. coli 0157-H7, Enterohemoragic E. coli (EHEC) and Salmonella spp results must be negative (0 per 100 mL of water).</li>
-<li>Generic E. Coli results must lie between ²126MPN (or CFU)/100mL and ²235MPN/100mL for any single sample where edible portions of the crop ARE contacted by water.</li>
+<li>Generic E. Coli results must lie between 126MPN (or CFU)/100mL and 235MPN/100mL for any single sample where edible portions of the crop ARE contacted by water.</li>
 <li>If testing has been performed for fecal coliforms then the limit is less than 2.2 fecal coliforms/100 mL of water. The Environmental Protection Agency (EPA) established this standard for reclaimed water (treated effluent) used on nonprocessed fresh produce. This 2.2 fecal coliforms/100 mL limit is considered free of pathogens for nonpotable agricultural purposes by the EPA. If higher densities of fecal coliforms are detected, it is suggested that growers do not use overhead irrigation.</li>
 <li>It is recommended that you check your local/state guidelines before interpreting any results2. The laboratory who undertook the test, local EPA office and your local Agricultural Extension agent may also be able to help.</li>
 <li>Please Note: The above limits outlined are for use for agricultural irrigation water. If you are using your surface water source for drinking also then the limits should meet EPA drinking water standards. Please consult  http://water.epa.gov/drink/contaminants/index.cfm (EPA web site) for further information on the requirements for safe drinking water.</li>
